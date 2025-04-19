@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,20 +17,20 @@
             <span id="minutes">25</span><span class="colon">:</span><span id="seconds">00</span>
         </div>
         <div class="controls">
-            <button id="start">Start</button>
-            <button id="pause">Pause</button>
-            <button id="reset">Reset</button>
+            <button id="start"><i class="fas fa-play"></i> Start</button>
+            <button id="pause"><i class="fas fa-pause"></i> Pause</button>
+            <button id="reset"><i class="fas fa-redo-alt"></i> Reset</button>
         </div>
         <div class="toggle-container">
-            <button id="work-rest-toggle" class="work-mode">Work Mode</button>
+            <button id="work-rest-toggle" class="work-mode"><i class="fas fa-briefcase"></i> Work Mode</button>
         </div>
         <div class="mode-selector">
-            <button id="pomodoro" class="active">Pomodoro</button>
-            <button id="short-break">Short Break</button>
-            <button id="long-break">Long Break</button>
+            <button id="pomodoro" class="active"><i class="fas fa-clock"></i> Pomodoro</button>
+            <button id="short-break"><i class="fas fa-coffee"></i> Short Break</button>
+            <button id="long-break"><i class="fas fa-couch"></i> Long Break</button>
         </div>
         <div class="session-counter">
-            Sessions: <span id="session-count">0</span>
+            <i class="fas fa-history"></i> Sessions: <span id="session-count">0</span>
         </div>
     </div>
     <script src="script.js"></script>

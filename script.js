@@ -194,12 +194,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 600);
         
         if (isWorkMode) {
-            workRestToggleBtn.textContent = 'Work Mode';
+            workRestToggleBtn.innerHTML = '<i class="fas fa-briefcase"></i> Work Mode';
             workRestToggleBtn.classList.remove('rest-mode');
             workRestToggleBtn.classList.add('work-mode');
             switchTimer('pomodoro');
         } else {
-            workRestToggleBtn.textContent = 'Rest Mode';
+            workRestToggleBtn.innerHTML = '<i class="fas fa-coffee"></i> Rest Mode';
             workRestToggleBtn.classList.remove('work-mode');
             workRestToggleBtn.classList.add('rest-mode');
             // Choose short break by default when switching to rest mode

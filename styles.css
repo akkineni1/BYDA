@@ -323,10 +323,18 @@ button#work-rest-toggle.flipping {
     flex: 1;
     min-width: 110px;
     max-width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mode-selector button.active {
     transform: scale(1.05);
+}
+
+.mode-selector button i {
+    margin-right: 6px;
+    font-size: 0.9em;
 }
 
 .session-counter {
@@ -335,15 +343,43 @@ button#work-rest-toggle.flipping {
     background: #f3f4f6;
     padding: 10px 20px;
     border-radius: 30px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-weight: 500;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.session-counter i {
+    margin-right: 8px;
+    color: #3b82f6;
 }
 
 .session-counter span {
     font-weight: 700;
     color: #3b82f6;
     margin-left: 5px;
+}
+
+button i {
+    margin-right: 8px;
+    font-size: 0.95em;
+    transition: transform 0.3s ease;
+}
+
+button:hover i {
+    transform: rotate(10deg);
+}
+
+button#reset:hover i {
+    transform: rotate(45deg);
+}
+
+button#work-rest-toggle.work-mode i {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+button#work-rest-toggle.rest-mode i {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Responsive styles */
