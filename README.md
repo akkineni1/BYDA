@@ -1,14 +1,15 @@
-# Pomodoro Timer Web App
+# Pomodoro Timer Web App (Version 2)
 
-A simple, browser-based Pomodoro Timer application to boost your productivity.
+A simple, browser-based Pomodoro Timer application to boost your productivity, featuring a beautiful peach theme and reliable sound system.
 
 ## Features
 
 - Customizable focus, break, and long break durations
+- Beautiful peach gradient theme with modern design
+- Reliable sound alerts using Web Audio API
 - Visual progress bar
 - Task management system
 - Browser notifications when timer completes
-- Sound alerts
 - Responsive design that works on any device
 - Local storage to save your tasks
 
@@ -17,6 +18,7 @@ A simple, browser-based Pomodoro Timer application to boost your productivity.
 1. **Set Up Timer**:
    - Customize focus time, break time, and long break duration in the settings
    - Set how many pomodoros until a long break
+   - Adjust sound volume with the slider
 
 2. **Add Tasks**:
    - Enter tasks in the input field
@@ -39,13 +41,13 @@ To use this app, simply open the `index.html` file in your web browser. No insta
 
 ```bash
 # If you have Python installed, you can run a simple server with:
-python -m http.server
+python3 -m http.server 8080
 
 # Or with Node.js:
 npx serve
 ```
 
-Then open your browser and navigate to `http://localhost:8000` (for Python) or `http://localhost:3000` (for Node.js serve).
+Then open your browser and navigate to `http://localhost:8080` (for Python) or `http://localhost:3000` (for Node.js serve).
 
 ## Browser Compatibility
 
@@ -53,6 +55,7 @@ This app works in all modern browsers that support:
 - ES6+ JavaScript
 - CSS Flexbox/Grid
 - Web Notifications API
+- Web Audio API
 - Local Storage API
 
 ## License
